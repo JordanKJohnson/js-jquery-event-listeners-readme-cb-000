@@ -31,7 +31,7 @@ $(document).ready(function(){
     submitIt();
   });
 
-  $("input").on('keydown', function(key) {
+  $("form input").on('keydown', function(key) {
     pressIt(key.keyCode);
   });
 
