@@ -32,7 +32,7 @@ $(document).ready(function(){
   });
 
   $("#form input").on('keydown', function(key) {
-    pressIt(key.keycode);
+    pressIt(key.which);
   });
 
 });
