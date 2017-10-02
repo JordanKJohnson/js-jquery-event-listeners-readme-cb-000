@@ -31,8 +31,10 @@ $(document).ready(function(){
     submitIt();
   });
 
-  $("#form input").on('keydown', function(key) {
-    pressIt(key.keyCode);
-  });
+  document.keydown = function(e) {
+    e = e || window.event;
+    var button = (typeof e.which != "undefined") ? e.which : e.button;
+    pressIt(button);
+  };
 
 });
