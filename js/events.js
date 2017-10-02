@@ -16,7 +16,7 @@ function pressIt(key){
       alert('G was pressed.');
   }
   else{
-    alert('G was not pressed.');
+    //alert('G was not pressed.');
   }
   return;
 }
