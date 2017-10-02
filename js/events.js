@@ -12,7 +12,7 @@ function submitIt(){
 }
 
 function pressIt(key){
-  if(key.toString() == "71"){
+  if(key == 71){
       alert('G was pressed.');
   }
   else{
