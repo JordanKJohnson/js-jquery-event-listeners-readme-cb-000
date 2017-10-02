@@ -28,7 +28,7 @@ $(document).ready(function(){
     submitIt();
   });
 
-  $("#typing").on('keydown', function(key) {
+  $("form #typing").on('keydown', function(key) {
     pressIt(key.keycode.toString());
   });
 
