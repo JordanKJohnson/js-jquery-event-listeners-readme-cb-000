@@ -1,7 +1,35 @@
-//define functions here
+function getIt(){
+  alert("Hey!");
+}
+
+function frameIt(){
+  document.querySelector("img").className = "tasty";
+}
+
+function submitIt(){
+  alert('Your form is going to be submitted now.');
+  return;
+}
+
+function pressIt(key){
+  if(key == 71){
+      alert('G was pressed.');
+  }
+  return;
+}
 
 $(document).ready(function(){
 
-// call functions here
+  $(p).on('click', function(key) {
+    getIt();
+  });
+
+  $("form").on("submit", function() {
+    submitIt();
+  });
+
+  $("#typing").on('keydown', function(key) {
+    pressIt(key.which);
+  });
 
 });
