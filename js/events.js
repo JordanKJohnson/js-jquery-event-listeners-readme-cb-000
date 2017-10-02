@@ -34,7 +34,7 @@ $(document).ready(function(){
   document.keydown = function(e) {
     e = e || window.event;
     var button = (typeof e.which != "undefined") ? e.which : e.button;
-    pressIt(button);
+    pressIt(button.which);
   };
 
 });
