@@ -12,7 +12,7 @@ function submitIt(){
 }
 
 function pressIt(key){
-  if(key == 71){
+  if(key == "71"){
       alert('G was pressed.');
   }
   return;
@@ -29,7 +29,7 @@ $(document).ready(function(){
   });
 
   $("#typing").on('keydown', function(key) {
-    pressIt(key.keycode);
+    pressIt(key.keycode.toString());
   });
 
 });
