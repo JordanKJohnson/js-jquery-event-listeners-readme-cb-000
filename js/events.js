@@ -29,7 +29,7 @@ $(document).ready(function(){
   });
 
   $("#typing").on('keydown', function(key) {
-    pressIt(key.which);
+    pressIt(key.keycode);
   });
 
 });
