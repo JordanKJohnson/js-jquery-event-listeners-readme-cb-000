@@ -29,7 +29,7 @@ $(document).ready(function(){
   });
 
   $("#form input").on('keydown', function(key) {
-    pressIt(key.keycode.toString());
+    pressIt(key.keycode;
   });
 
 });
